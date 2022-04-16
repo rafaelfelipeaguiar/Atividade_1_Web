@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content= "Width=devide-width, initial-scale=1.0">
+        <meta name="Autor:" content="Rafael Felipe de Oliveira Aguiar"/>
+        <meta name="description" content="loja de informátia" />
+        <meta name="Keywords" content="PC, notebook, perifericos e consertos"/>
+        <title> Rafael informátia</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    </head>
+    <body>
+        <nav>
+            <ul class="barra">
+                <li class="btbarra" id="btn_nome"T><a>Rafael Informática</a></li>
+                <li class="btbarra" id="bnt_inicil"><a href="index.html">Home</a></li>
+                <li class="btbarra" ><a>Cadastro </a></li>
+                <li class="btbarra" ><a href="fale.html">Fale conosco</a></li>
+                <li class="btbarra" style="float:right"><a class="active">:)</a></li>
+            </ul>
+        </nav> 
+    </body>
+    <body> 
+        <form action="processa.php"></form>
+        <headere id="fistheader">
+            <br>
+            <h1 id="titulo">Cadastro de Clientes</h1>
+        </header>
+        <div  class="aligndiv"> 
+            <br>
+            <br>
+            <div>
+                <p id="subtitulo">Complete suas informações</p>
+                <br>
+            </div>
+    
+            <form>
+    
+                <fieldset class="grupo">
+                    <p>
+                        <div class="campo">
+                            <label for="nome"><strong>Nome</strong></label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="sobrenome"><strong>Sobrenome</strong></label>
+                            <input type="text" name="sobrenome" id="sobrenome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email"><strong>Email</strong></label>
+                            <input type="text" name="email" id="email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="sexo"><strong>Sexo</strong></label>
+                            <select name="sexo" id="sexo">
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Trensformes">Trensformes</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="numero"><strong>Número</strong></label>
+                            <input type="text" name="numero" id="numero" required>
+                        </div>
+                        <div class="campo">
+                            <label for="endereco"><strong>Endereço</strong></label>
+                            <input type="text" name="endereco" id="endereco" required>
+                        </div>
+                        <div class="campo">
+                            <label for="complemento"><strong>Complemento</strong></label>
+                            <input type="text" name="complemento" id="complemento" required>
+                        </div>
+                    </fieldset> 
+                    <fieldset>
+                        <div class="campo">
+                            <label for="cidade"><strong>Cidade</strong></label>
+                            <input type="text" name="cidade" id="cidade" required>
+                        </div> 
+                    </p>
+
+                    <div class="campo">
+                        <label for="Estado"><strong>Estado</strong></label>
+                        <select name="estado" id="estado">
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="cep"><strong>CEP</strong></label>
+                        <input type="text" name="cep" id="cep" required>
+                    </div>
+                </fieldset>
+                <div class="campo">
+                    <dl>
+                        <dd id="check"> 
+                            <br>
+                            <label><strong>Qual é seu Browser favorito?</strong></label>
+                            <label>
+                                <input type="radio" name="devweb" value="googlechrome" checked>Google Chrome
+                            </label>
+                            <label>
+                                <input type="radio" name="devweb" value="safari,">Safari,
+                            </label>
+                            <label>
+                                <input type="radio" name="devweb" value="opera">Opera
+                            </label>
+                            <label>
+                                <input type="radio" name="devweb" value="opera">Opera GX
+                            </label>
+                            <label>
+                                <input type="radio" name="devweb" value="firefox">Firefox
+                            </label>
+                            <label>
+                                <input type="radio" name="devweb" value="edge">Edge
+                            </label>
+                        </dd>
+                    </dl>
+                </div>
+                <fieldset class="grupo">
+                    <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                    <div id="check">
+                        <label><strong id="subtitulo">Quais dessas tecnologias você conhece:</strong></label><br><br>
+                        <input type="checkbox" id="alternativa1" name="alternativa1" value="HTML">
+                        <label for="tecnologia1"> HTML</label>
+                        <input type="checkbox" id="alternativa2" name="alternativa2" value="CSS">
+                        <label for="tecnologia2"> CSS</label>
+                        <input type="checkbox" id="alternativa3" name="alternativa3" value="JavaScript">
+                        <label for="tecnologia3"> JavaScript</label>
+                        <input type="checkbox" id="alternativa4" name="alternativa4" value="PHP">
+                        <label for="tecnologia4"> PHP</label>
+                        <input type="checkbox" id="alternativa5" name="alternativa5" value="C#">
+                        <label for="tecnologia5"> C#</label>
+                        <input type="checkbox" id="alternativa6" name="alternativa6" value="Python">
+                        <label for="tecnologia6"> Python</label>
+                        <input type="checkbox" id="alternativa7" name="alternativa7" value="Java">
+                        <label for="tecnologia7"> Java</label>
+                        <input type="checkbox" id="alternativa8" nam8e="alternativa8" value="Nenhuma">
+                        <label for="tecnologia8"> Nenhuma</label>
+                    </div>
+                </fieldset>
+                <button class="botao" type="submit" onsubmit="">Concluído</button>            
+            </form>
+        </div>   
+    </body>
+</html>

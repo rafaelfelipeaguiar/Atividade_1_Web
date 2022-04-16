@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content= "Width=devide-width, initial-scale=1.0">
+        <meta name="Autor:" content="Rafael Felipe de Oliveira Aguiar"/>
+        <meta name="description" content="loja de informátia" />
+        <meta name="Keywords" content="PC, notebook, perifericos e consertos"/>
+        <title> Rafael informátia</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    </head>
+    <body>
+        <nav>
+            <ul class="barra">
+                <li class="btbarra" id="btn_nome"><a>Rafael Informática</a></li>
+                <li class="btbarra" id="bnt_inicil"><a href="index.html">Home</a></li>
+                <li class="btbarra" ><a href="cadastro.html">Cadastro </a></li>
+                <li class="btbarra" ><a>Fale conosco</a></li>
+                <li class="btbarra" style="float:right"><a class="active">:)</a></li>
+            </ul>
+        </nav> 
+    </body>
+    <body>
+        <form action="processa.php">
+            <headere id="fistheader">
+                <br>
+                <h1 id="titulo">Fale Conosco Senhor</h1>
+            </header>
+            <br>
+            <div class="aligndiv">
+                <fieldset>
+                    <legend id="titulo">Dados pessoais</legend>
+                    <p>
+                        <div class="campo" id="hehe">
+                            <label for=" nome">Nome: </label>
+                            <input type="text" nome="email" id="email" required>
+                            <br>
+                            <label for=" telefone">Telefone: </label>
+                            <input type="text" nome="email" id="email" required>
+                            <br>
+                            <label for=" email">E-mail: </label>
+                            <input type="text" nome="email" id="email" required>
+                            <br>
+                            <label for="cidade">Cidade: </label>
+                            <input type="text" name="cidade" id="cidade" required>
+                        </div>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend id="titulo">Mensagem</legend>
+                    <div id="hehe">
+                        <br>
+                        <strong id="subtitulo">Deseja receber nossas novidades?</strong>
+                        <dl>
+                            <dd id="check"> 
+                                <br>
+                                <input type="radio" nome="avaliacao" value="sim">Sim
+                                <input type="radio" nome="avaliacao" value="nao">Não
+                            </dd>
+                        </dl>
+                        <p> 
+                    </div>
+                    <div id="hehe" class="campo">
+                        <strong id="subtitulo">Digite sua mensagem no campo abaixo</strong>
+                            <dl>
+                                <dd>
+                                    <textarea name="" id="" cols="42" rows="5"></textarea>
+                                </dd>
+                            </dl>
+                        </p>
+                        <p>
+                        <dl>
+                            <dd>
+                                <input type="submit" value="Envia">
+                            </dd>
+                        </dl>
+                        </p>
+                    </div>
+            </div>
+        </form>
+    </body>
+</html>
